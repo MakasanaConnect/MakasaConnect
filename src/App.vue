@@ -15,10 +15,10 @@ import ConfirmPage from './components/ConfirmPage.vue';
   </header>
 
   <main>
-    <!-- <ConfirmPage/> -->
+    <ConfirmPage/>
     <!-- <RegistrationPage/> -->
     <!-- <LoginPage/> -->
-    <LandingPage/>
+    <!-- <LandingPage/> -->
   </main>
 </template>
 

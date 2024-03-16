@@ -3,8 +3,16 @@
       <h1>Registration</h1>
       <form @submit.prevent="register">
         <div>
-          <label for="name">Name:</label>
+          <label for="Full Names: ">Full Names</label>
           <input type="text" id="name" v-model="registration.name" required>
+        </div>
+        <div>
+          <label for="Birhtdate:"> Birhtdate</label>
+          <input type="text" id="Birhtdate" v-model="registration.Birhtdate" required>
+        </div>
+        <div>
+          <label for="Gender"> Birhtdate</label>
+          <input type="text" id="Birhtdate" v-model="registration.Birhtdate" required>
         </div>
         <div>
           <label for="email">Email:</label>
@@ -19,7 +27,7 @@
           <input type="text" id="idNumber" v-model="registration.idNumber" required>
           <!-- Add validation messages here if needed -->
         </div>
-        <button type="submit">Register</button>
+        <button type="submit">Confirm</button>
       </form>
     </div>
   </template>
