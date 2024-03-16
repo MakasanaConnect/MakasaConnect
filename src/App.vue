@@ -1,24 +1,36 @@
 <script setup>
+import Profile from './components/Profile.vue';
 import RegistrationPage from './components/RegistrationPage.vue';
 import LoginPage from './components/LoginPage.vue';
 import LandingPage from './components/LandingPage.vue';
 import ConfirmPage from './components/ConfirmPage.vue';
+
+
+
+ 
 </script>
 
 <template>
-  <header>
+  <!-- <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
       <HelloWorld msg="" />
     </div>
-  </header>
+  </header> -->
 
   <main>
     <!-- <ConfirmPage/> -->
     <!-- <RegistrationPage/> -->
     <!-- <LoginPage/> -->
-    <LandingPage/>
+    <!-- <LandingPage/> -->
+    <Profile :user="{
+      'birthdate': '2001-12-31', 
+      'fullnames': 'Johnny Tsela', 
+      'address': 'Johanneburg', 
+      'gender': 'Male',
+      'email': 'johnnyT@gmail.com',
+     }" />
   </main>
 </template>
 
