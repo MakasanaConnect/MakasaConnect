@@ -4,7 +4,7 @@ import RegistrationPage from './components/RegistrationPage.vue';
 import LoginPage from './components/LoginPage.vue';
 import LandingPage from './components/LandingPage.vue';
 import ConfirmPage from './components/ConfirmPage.vue';
-
+import NavBar from './components/NavBar.vue';
 
 
  
@@ -18,12 +18,13 @@ import ConfirmPage from './components/ConfirmPage.vue';
       <HelloWorld msg="" />
     </div>
   </header> -->
-
+  <NavBar />
   <main>
     <!-- <ConfirmPage/> -->
     <!-- <RegistrationPage/> -->
     <!-- <LoginPage/> -->
     <!-- <LandingPage/> -->
+    
     <Profile :user="{
       'birthdate': '2001-12-31', 
       'fullnames': 'Johnny Tsela', 
@@ -33,6 +34,7 @@ import ConfirmPage from './components/ConfirmPage.vue';
       'marital': 'single',
       'familymembers': '4'
      }" />
+     <LandingPage />
   </main>
 </template>
 
