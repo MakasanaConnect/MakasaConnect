@@ -30,6 +30,8 @@ import ConfirmPage from './components/ConfirmPage.vue';
       'address': 'Johanneburg', 
       'gender': 'Male',
       'email': 'johnnyT@gmail.com',
+      'marital': 'single',
+      'familymembers': '4'
      }" />
   </main>
 </template>

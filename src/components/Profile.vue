@@ -12,7 +12,7 @@
 </script>
 
 <template>
-    <div class="user-profile p-8 bg-grey-300 shadow-lg rounded-lg border">
+    <div class="user-profile p-8 bg-gray-700 shadow-lg rounded-lg border">
         <h1 class="text-5xl font-bold mb-6">Profile</h1>
         <div class="flex items-center">
           <div class="avatar w-32 h-32 overflow-hidden rounded-full mr-6 relative border">
@@ -28,10 +28,11 @@
                 <p class="mb-2"><strong>Full names:</strong> {{ user.fullnames }}</p>
                 <p class="mb-2"><strong>Birthdate:</strong> {{ user.birthdate }}</p>
                 <p class="mb-2"><strong>Gender:</strong> {{ user.gender }}</p>
+                <p class="mb-2"><strong>Marital status:</strong> {{ user.marital }}</p>
                 <p class="mb-2"><strong>Email:</strong> {{ user.email }}</p>
                 <p class="mb-2"><strong>Address:</strong> {{ user.address }}</p>
                 <p class="mb-2"><strong>Employment status:</strong> {{ user.employment }}</p>
-                <p class="mb-2"><strong>Family members:</strong> {{ user.familyMembers }}</p>
+                <p class="mb-2"><strong>Family members:</strong> {{ user.familymembers }}</p>
                 <div class="qualification-upload mt-4 flex items-center">
                     <label for="qualification-file" class="mr-3">Upload Qualification:</label>
                     <div class="relative">
