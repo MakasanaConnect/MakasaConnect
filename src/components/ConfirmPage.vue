@@ -1,32 +1,29 @@
 <template>
     <div>
       <h1>Registration</h1>
-      <form @submit.prevent="register">
+      <form @submit.prevent="ConfirmPage">
         <div>
-          <label for="Full Names: ">Full Names</label>
-          <input type="text" id="name" v-model="registration.name" required>
+          <input type="text" id="name" v-model="registration.name" placeholder="Full Names: " required >
         </div>
         <div>
-          <label for="Birhtdate:"> Birhtdate</label>
-          <input type="text" id="Birhtdate" v-model="registration.Birhtdate" required>
+          <input type="text" id="Birhtdate" v-model="registration.Birhtdate" placeholder="Birhtdate:" required>
         </div>
         <div>
-          <label for="Gender"> Birhtdate</label>
-          <input type="text" id="Birhtdate" v-model="registration.Birhtdate" required>
+          <input type="text" id="Birhtdate" v-model="registration.Gender" placeholder="Gender: " required>
         </div>
         <div>
-          <label for="email">Email:</label>
-          <input type="email" id="email" v-model="registration.email" required>
+          <input type="email" id="email" v-model="registration.email" placeholder="Email: ">
         </div>
         <div>
-          <label for="password">Password:</label>
-          <input type="password" id="password" v-model="registration.password" required>
+          <input type="password" id="password" v-model="registration.Residential" placeholder="Residential Address: " required>
         </div>
         <div>
-          <label for="idNumber">ID Number:</label>
-          <input type="text" id="idNumber" v-model="registration.idNumber" required>
-          <!-- Add validation messages here if needed -->
+          <input type="password" id="password" v-model="registration.password" placeholder="Password: ">
         </div>
+        <div>
+          <input type="password" id="password" v-model="registration.ConfirmPassword" placeholder="Confirm password" required>
+        </div>
+
         <button type="submit">Confirm</button>
       </form>
     </div>
