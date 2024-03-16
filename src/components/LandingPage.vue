@@ -10,14 +10,25 @@ defineProps({
 <template>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
-    <h3>
+    <h2>
       Welcome to MakasanaConnect
-
-    </h3>
+      
+    </h2>
+    <div class="register">
+      <router-link to="/register"><button class="action-button">Register</button></router-link>
+    </div>
+    <div class="login">
+      <router-link to="/login"><button class="action-button">Login</button></router-link>
+    </div>
+    <div class="exit">
+      <router-link to=""><button class="action-button">Exit</button></router-link>
+    </div>
+    
   </div>
 </template>
 
 <style scoped>
+
 h1 {
   font-weight: 500;
   font-size: 2.6rem;
@@ -25,7 +36,7 @@ h1 {
   top: -10px;
 }
 
-h3 {
+h2 {
   font-size: 1.2rem;
 }
 

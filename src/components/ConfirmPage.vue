@@ -44,7 +44,7 @@
     methods: {
       register() {
         // Here you can send the registration data to your backend server
-        console.log('Registration data:', this.registration);
+        console.log('Confirmation data:', this.ConfirmPage);
         // You can also perform any additional validation before submitting the form
       }
     }

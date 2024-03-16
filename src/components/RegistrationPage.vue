@@ -3,9 +3,8 @@
     <h1>Registration</h1>
     <form @submit.prevent="register">        
       <div>
-        <label for="idNumber">ID Number:</label>
-        <input type="text" id="idNumber" v-model="registration.idNumber" required>
-        <!-- Add validation messages here if needed -->
+        <input type="text" id="idNumber" v-model="registration.idNumber" placeholder="Id number" required>
+
       </div>
       <button type="submit">Register</button>
     </form>
@@ -25,7 +24,8 @@ export default {
     register() {
       // Here you can send the registration data to your backend server
       console.log('Registration data:', this.registration);
-      // You can also perform any additional validation before submitting the form
+      this.$router.push('/confirm');
+
     }
   }
 };
