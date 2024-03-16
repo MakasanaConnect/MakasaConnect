@@ -12,11 +12,16 @@
 </script>
 
 <template>
-    <div class="user-profile p-8 bg-grey-500 shadow-md rounded-lg">
-        <h1 class="text-3xl font-bold mb-6 px-10">Profile</h1>
+    <div class="user-profile p-8 bg-grey-300 shadow-lg rounded-lg border">
+        <h1 class="text-5xl font-bold mb-6">Profile</h1>
         <div class="flex items-center">
-            <div class="avatar w-32 h-32 overflow-hidden rounded-full mr-6">
+          <div class="avatar w-32 h-32 overflow-hidden rounded-full mr-6 relative border">
                 <img :src="user.avatar" alt="User Avatar" class="w-full h-full object-cover">
+                <button class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-2xl font-bold opacity-0 hover:opacity-100 transition duration-300">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                </button>
             </div>
             <div class="details">
                 <h2 class="text-blue-500 text-xl font-semibold mb-2 mx-5">{{ user.name }}</h2>
