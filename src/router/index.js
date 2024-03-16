@@ -1,10 +1,8 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import LandingPage from '../components/LandingPage.vue'
 import RegistrationPage from '../components/RegistrationPage.vue'
 import LoginPage from '../components/LoginPage.vue'
 
-Vue.use(VueRouuter)
 
 const routes = [
     {
@@ -24,7 +22,8 @@ const routes = [
     }
 ]
 
-const router = new VueRouter({
+const router = createRouter({
+    history: createWebHistory(),
     routes
 })
 
