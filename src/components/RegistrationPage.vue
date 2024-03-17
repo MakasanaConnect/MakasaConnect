@@ -29,7 +29,7 @@ export default {
     register() {
       // Here you can send the registration data to your backend server
       console.log('Registration data:', this.registration);
-      this.$router.push('/confirm');
+      this.$router.push('/confirmPage');
 
     }
   }

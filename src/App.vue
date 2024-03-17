@@ -20,12 +20,12 @@ import NavBar from './components/NavBar.vue';
   </header> -->
   <NavBar />
   <main>
+    <router-view />
     <!-- <ConfirmPage/> -->
     <!-- <RegistrationPage/> -->
     <!-- <LoginPage/> -->
-    <!-- <LandingPage/> -->
-    
-    <Profile :user="{
+    <!-- <LandingPage/> -->    
+    <!-- <Profile :user="{
       'birthdate': '2001-12-31', 
       'fullnames': 'Johnny Tsela', 
       'address': 'Johanneburg', 
@@ -33,8 +33,8 @@ import NavBar from './components/NavBar.vue';
       'email': 'johnnyT@gmail.com',
       'marital': 'single',
       'familymembers': '4'
-     }" />
-     <LandingPage />
+     }" />  -->
+     <!-- <LandingPage /> -->
   </main>
 </template>
 

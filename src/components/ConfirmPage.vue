@@ -1,6 +1,6 @@
 <template>
     <div>
-      <h1>Registration</h1>
+      <h1>Registration Data </h1>
       <form @submit.prevent="ConfirmPage">
         <div>
           <input type="text" id="name" v-model="registration.name" placeholder="Full Names: " required >
@@ -42,9 +42,10 @@
       };
     },
     methods: {
-      register() {
+      ConfirmPage() {
         // Here you can send the registration data to your backend server
         console.log('Confirmation data:', this.ConfirmPage);
+        this.$router.push('/Profile');
         // You can also perform any additional validation before submitting the form
       }
     }
