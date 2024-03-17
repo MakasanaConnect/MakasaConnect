@@ -1,7 +1,7 @@
 <template>
   <nav class="p-5 bg-green-700 text-white flex justify-between items-center">
     <!-- Logo -->
-    <h1 class="text-4xl">MakasanaConnect</h1>
+    <h1 class="text-4xl">Makasana Connect</h1>
     <!-- Action buttons -->
     <div class="flex gap-5">
       <router-link to="/register">
@@ -9,6 +9,9 @@
       </router-link>
       <router-link to="/login">
         <button class="py-2 px-4 bg-green-500 text-white rounded font-semibold">Login</button>
+      </router-link>
+      <router-link to="/">
+        <button class="py-2 px-4 bg-green-500 text-white rounded font-semibold">HOME</button>
       </router-link>
     </div>
   </nav>

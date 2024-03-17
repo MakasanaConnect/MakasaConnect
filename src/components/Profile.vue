@@ -13,7 +13,7 @@
 </script>
 
 <template>
-    <div class="text-left w-1/2 bg-green-500 bg-opacity-50 mx-5 py-5 border my-5 px-10 rounded mb-10 relative border">
+    <div class="text-left w-1/2 bg-green-500 bg-opacity-50 mx-10 py-5 border my-5 px-10 rounded mb-10 relative border">
         <h1 class="text-5xl font-bold mb-6">Profile</h1>
         <div class="flex items-center">
           <div class="avatar w-32 h-32 overflow-hidden rounded-full mr-6 relative border">

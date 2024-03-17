@@ -25,7 +25,7 @@ import NavBar from './components/NavBar.vue';
     <!-- <RegistrationPage/> -->
     <!-- <LoginPage/> -->
     <!-- <LandingPage/> -->    
-    <!-- <Profile :user="{
+    <Profile :user="{
       'birthdate': '2001-12-31', 
       'fullnames': 'Johnny Tsela', 
       'address': 'Johanneburg', 
@@ -33,7 +33,7 @@ import NavBar from './components/NavBar.vue';
       'email': 'johnnyT@gmail.com',
       'marital': 'single',
       'familymembers': '4'
-     }" />  -->
+     }" /> 
      <!-- <LandingPage /> -->
   </main>
 </template>
