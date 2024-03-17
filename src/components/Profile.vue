@@ -13,6 +13,7 @@
 </script>
 
 <template>
+    <main class="flex-grow p-5 bg-cover bg-center animate-bg h-screen flex flex-col items-start justify-center font-fun relative">
     <div class="text-left w-1/2 bg-green-500 bg-opacity-50 mx-10 py-5 border my-5 px-10 rounded mb-10 relative border">
         <h1 class="text-5xl font-bold mb-6">Profile</h1>
         <div class="flex items-center">
@@ -52,4 +53,26 @@
             </div>
         </div>
     </div>
+</main>
 </template>
+
+<style scoped>
+@keyframes bg {
+  0% { background-image: url('../assets/image-1.jpg'); }
+  33% { background-image: url('../assets/image-2.jpg'); }
+  66% { background-image: url('../assets/image-3.jpg'); }
+  100% { background-image: url('../assets/image-1.jpg'); }
+}
+
+.animate-bg {
+  animation: bg 15s infinite;
+}
+
+.font-fun {
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Replace with your actual fun font */
+}
+
+.rounded-lg {
+  border-radius: 1rem;
+}
+</style>

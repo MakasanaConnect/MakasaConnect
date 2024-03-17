@@ -1,4 +1,5 @@
 <template>
+   <main class="flex-grow p-5 bg-cover bg-center animate-bg h-screen flex flex-col items-start justify-center font-fun relative">
 <div class="flex-grow p-5 bg-cover bg-center animate-bg h-screen flex flex-col items-start justify-center font-fun relative">
   <div class="max-w-md mx-auto bg-green-500 shadow-md rounded-lg p-8 border">
     <h1 class="text-3xl text-white font-bold mb-6">Registration</h1>
@@ -15,6 +16,7 @@
     </form>
   </div>
 </div>
+</main>
 </template>
 
 <script>
@@ -36,3 +38,23 @@ export default {
   }
 };
 </script>
+<style scoped>
+@keyframes bg {
+  0% { background-image: url('../assets/image-1.jpg'); }
+  33% { background-image: url('../assets/image-2.jpg'); }
+  66% { background-image: url('../assets/image-3.jpg'); }
+  100% { background-image: url('../assets/image-1.jpg'); }
+}
+
+.animate-bg {
+  animation: bg 15s infinite;
+}
+
+.font-fun {
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Replace with your actual fun font */
+}
+
+.rounded-lg {
+  border-radius: 1rem;
+}
+</style>
