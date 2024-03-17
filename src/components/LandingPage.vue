@@ -20,15 +20,15 @@
       <div class="grid grid-cols-3 gap-4">
         <!-- Replace with your actual services -->
         <div class="p-4 border rounded">
-          <h3 class="text-xl mb-2">Service 1</h3>
+          <h3 class="text-xl mb-2">Job listing</h3>
           <p>Description of Service 1</p>
         </div>
         <div class="p-4 border rounded">
-          <h3 class="text-xl mb-2">Service 2</h3>
+          <h3 class="text-xl mb-2">Skill listing</h3>
           <p>Description of Service 2</p>
         </div>
         <div class="p-4 border rounded">
-          <h3 class="text-xl mb-2">Service 3</h3>
+          <h3 class="text-xl mb-2">Municipal/Community relationship</h3>
           <p>Description of Service 3</p>
         </div>
       </div>
